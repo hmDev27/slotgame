@@ -1,0 +1,106 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: #ecf0f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background: linear-gradient(145deg, #3b4b5a, #2c3e50);
+  padding: 30px;
+  border-radius: 20px;
+  width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+input {
+  width: 60px;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 8px;
+  border: 1px solid #1abc9c;
+  text-align: center;
+  font-size: 16px;
+  outline: none;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus {
+  border-color: #e67e22;
+  box-shadow: 0 0 10px rgba(230, 126, 34, 0.6);
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(145deg, #e67e22, #d35400);
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(145deg, #d35400, #e67e22);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.slot-machine {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+  height: 180px;
+  overflow: hidden;
+  border: 3px solid #ecf0f1;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, #1abc9c, #16a085);
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.reel {
+  width: 60px;
+  height: 180px;
+  overflow: hidden;
+  margin: 0 7px;
+  position: relative;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.symbol {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.hidden { display: none; }
+
+@keyframes flash {
+  0%, 100% { background-color: gold; color: black; box-shadow: 0 0 10px yellow; }
+  50% { background-color: #f1c40f; color: black; box-shadow: 0 0 25px yellow; }
+}
+
+.symbol.winning { animation: flash 0.5s ease-in-out 6; border-radius: 10px; }
