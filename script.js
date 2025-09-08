@@ -1,6 +1,6 @@
 const ROWS = 3,
   COLS = 3;
-const SYMBOLS_COUNT = { A: 2, B: 8, C: 12, D: 12 };
+const SYMBOLS_COUNT = { A: 2, B: 6, C: 8, D: 8 };
 const SYMBOLS_VALUES = { A: 5, B: 4, C: 3, D: 2 };
 const SYMBOLS = ["A", "B", "C", "D"];
 
