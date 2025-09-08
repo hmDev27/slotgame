@@ -1,7 +1,7 @@
 const ROWS = 3,
   COLS = 3;
 const SYMBOLS_COUNT = { A: 3, B: 6, C: 9, D: 12 };
-const SYMBOLS_VALUES = { A: 8, B: 5, C: 3, D: 2 };
+const SYMBOLS_VALUES = { A: 8, B: 20, C: 5, D: 2 };
 const SYMBOLS = ["A", "B", "C", "D"];
 
 let balance = 0;
